@@ -68,10 +68,7 @@ public class MainActivity extends Activity {
             startActivity(intent);
         }
     }
-
-
-
-
+    
     public void onMenuListButtonClick(View v) {
 
         String serverId = Prefs.getServeIdPref(this);
@@ -101,7 +98,6 @@ public class MainActivity extends Activity {
 
 
     public void onPostExecute(String msg) {
-
         progressBar.hide();
         
         if (msg.contains("Error")) {

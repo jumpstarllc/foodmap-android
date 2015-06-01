@@ -324,6 +324,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:id="@+id/status_layout"
         android:visibility="gone">
         <TextView
@@ -335,6 +336,15 @@
             android:gravity="center"
             android:layout_margin="5dp" 
            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CD392F"
+            android:text="@string/layout_activty_main_retry"
+            android:id="@+id/status"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            />
     </LinearLayout>
 
 

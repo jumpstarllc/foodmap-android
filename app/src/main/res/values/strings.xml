@@ -84,8 +84,7 @@
     <string name="layout_activty_main_locate">Locate</string>
     <string name="layout_activty_main_featured">Featured</string>
     <string name="layout_activty_main_status">Status</string>
-
-
+    <string name="layout_activty_main_retry">Retry</string>
 
     <string name="addPayment">Add Payment Method</string>
     <string name="paymentMethods">Payment Methods</string>
