@@ -4,13 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.ContentLoadingProgressBar;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 public class MainActivity extends Activity {
 
@@ -20,7 +18,6 @@ public class MainActivity extends Activity {
     private ContentLoadingProgressBar progressBar;
     private TextView statusView; 
     private ImageView mainLogoView;
-    
 
     private static boolean mRegistered = false;
 
@@ -40,7 +37,6 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onResume() {
-
         super.onResume();
 
         if (!mRegistered) {
@@ -51,17 +47,7 @@ public class MainActivity extends Activity {
 
     public void onFindButtonClick(View v) {
         Intent intent = new Intent(this, FindActivity.class);
-        //Intent intent = new Intent(this, PaymentActivity.class);
         startActivity(intent);
-    }
-
-    public void onOrderListButtonClick(View v) {
-        if (Prefs.getServeIdPref(this).equals("")) {
-            Toast.makeText(this, "Setup Catering Service first.", Toast.LENGTH_LONG).show();
-        } else {
-            Intent intent = new Intent(this, ListOrderServerActivity.class);
-            startActivity(intent);
-        }
     }
 
     public void onFinderOrderButtonClick(View v) {
@@ -73,6 +59,18 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, EditServerActivity.class);
         startActivity(intent);
     }
+
+    public void onServerOrderButtonClick(View v) {
+        if (Prefs.getServeIdPref(this).equals("")) {
+            Toast.makeText(this, R.string.toast_setup_caterer, Toast.LENGTH_LONG).show();
+        } else {
+            Intent intent = new Intent(this, ListOrderServerActivity.class);
+            startActivity(intent);
+        }
+    }
+
+
+
 
     public void onMenuListButtonClick(View v) {
 
@@ -103,7 +101,6 @@ public class MainActivity extends Activity {
 
 
     public void onPostExecute(String msg) {
-        Log.v("sajid", "registration postExecute " + msg);
 
         progressBar.hide();
         

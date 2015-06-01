@@ -75,6 +75,15 @@
     <string name="card_cvc_label">CVC</string>
 
 
+    <string name="toast_setup_caterer">Setup Catering Service first</string>
+
+    <string name="layout_activty_main_serve_food">Serve Food</string>
+    <string name="layout_activty_main_find_food">Find Food</string>
+    <string name="layout_activty_main_orders">Orders</string>
+    <string name="layout_activty_main_menu">Menu</string>
+    <string name="layout_activty_main_locate">Locate</string>
+    <string name="layout_activty_main_featured">Featured</string>
+    <string name="layout_activty_main_status">Status</string>
 
 
 
