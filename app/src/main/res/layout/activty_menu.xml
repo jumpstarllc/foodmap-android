@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/menu_name_label"
+        android:id="@+id/menu_name_label"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_name_text"
+        android:hint="Enter Dish Name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/menu_description_label"
+        android:id="@+id/menu_description_label"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_description_text"
+        android:hint="Enter Dish Description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/menu_price_label"
+        android:id="@+id/menu_price_label"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_price_text"
+        android:inputType="numberDecimal"
+        android:hint="Enter Price per Dish"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/menu_photo_label"
+        android:id="@+id/menu_photo_label"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:id="@+id/menu_picture_view"
+        android:src="@drawable/ic_action_camera"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="dispatchTakePictureIntent"
+        android:layout_gravity="center_horizontal|bottom"
+        />
+
+</LinearLayout>

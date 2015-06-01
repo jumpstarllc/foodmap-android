@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:id="@+id/list_order_row_name_layout"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/list_order_row_who"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="person"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#3b5998"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/list_order_row_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-01-14 08:25"
+                android:textStyle="bold"
+                android:layout_weight="0"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_order_row_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Phone : 123456789"
+            android:textColor="#3b5998"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="onListOrderPhoneClick"
+            />
+
+        <TextView
+            android:id="@+id/list_order_row_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Address: 1470 eola road, Aurora IL"
+            android:textColor="#3b5998"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="onListOrderAddressClick"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/list_order_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/list_order_row_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5.00"
+            />
+
+        <TextView
+            android:id="@+id/list_order_row_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="2"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/list_order_row_total_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/list_order_row_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$24.50"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_order_buttons_layout"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_order_button1"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onListOrderButtonClick"
+            android:layout_weight="1"
+            android:background="#3b5998"
+            android:textColor="@color/order_list_button_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="15dp"
+            android:text="Button1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_order_button2"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onListOrderButtonClick"
+            android:layout_weight="1"
+            android:background="#3b5998"
+            android:textColor="@color/order_list_button_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="15dp"
+            android:text="Button2"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_order_button3"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onListOrderButtonClick"
+            android:layout_weight="1"
+            android:background="#3b5998"
+            android:textColor="@color/order_list_button_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="15dp"
+            android:text="Button3"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_order_row_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Status for ongoing transaction"
+        android:textColor="#3b5998"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/list_order_border"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="#dcdcdc"
+        >
+    </LinearLayout>
+
+</LinearLayout>
